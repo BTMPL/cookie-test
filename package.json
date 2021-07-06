@@ -1,0 +1,16 @@
+{
+  "name": "cookie-auth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "npx http-server -o"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
